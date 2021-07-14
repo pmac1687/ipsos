@@ -1,0 +1,107 @@
+covid cases/deaths in US by state
+
+
+db -> historical on bi-weekly basis
+
+    API -> historical
+
+        Country
+    
+            -historical cases/deaths bi-weekly basis
+                percentage of change from previous
+    
+        API TOP 5 by state
+    
+            -historical
+                -total
+                -percentage of change
+    
+        By state
+    
+            -historical cases/deaths bi-weekly basis
+    
+                -total cases/deaths
+                    -percentage of change from previous
+    
+                -percentage of country Total cases/deaths
+                    -percentage of change from previous
+
+
+API -> actively query api for up to minute
+
+    Country
+
+        -Total cases/deaths actively
+
+            -total actively
+
+    By state
+
+        -total cases/deaths actively
+
+            -total actively
+                - percentage of change from last historical entry
+
+            -percentage of country total
+                -percentage of change from last historical
+
+    
+
+
+
+            
+
+db
+
+    -will store historical on bi-weekly basis
+
+API -> active
+
+    - will actively query for up to the minute
+    - rank states by top 5
+
+API -> db
+
+    -serve historical from db
+    -rank top 5 on state level for all categories
+
+
+urls for usa:
+
+https://disease.sh/v3/covid-19/countries/usa
+
+    -30 days ago:
+
+    "https://disease.sh/v3/covid-19/countries?twoDaysAgo=thirtyDaysAgo"
+
+
+urls by state:
+
+    https://disease.sh/v3/covid-19/states/texas
+
+
+
+
+totals_USA by day table:
+
+    date:
+    total_cases:
+    todays_cases:
+    total_deaths:
+    todays_deaths:
+    percent_change_from_yesterday:
+
+
+
+master state table:
+
+    state:
+
+individual tables by state by day:
+
+    date:
+    total_cases:
+    todays_cases:
+    total_deaths:
+    todays_deaths:
+    percent_change_from_yesterday:
